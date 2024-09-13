@@ -10,6 +10,7 @@ import Layouts from "../layouts/Layouts";
 
 import Main from "../pages/main/Main";
 import Pitchersdetail from "../pages/players/details/Pitchersdetail";
+import Staff from "../pages/players/Staff";
 
 
 export const router = createBrowserRouter([
@@ -37,7 +38,13 @@ export const router = createBrowserRouter([
             },
             {   path: "/player/pitcher/details",
                 element: <Pitchersdetail/>,
-            }
+            },
+            
         ],
+        
     },
+    {
+        path: "/player/coach",
+        element: <Staff />,  // CoachStaff 페이지 설정
+    }
 ]);
